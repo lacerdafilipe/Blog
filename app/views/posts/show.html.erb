@@ -1,12 +1,15 @@
-<h1 class="title">
-	<%= @post.title %>
+<h1>show Posts</h1>
+
+
+	<h3>
+		<%= @post.title %>		
+	</h3>
+
+	<h4>
+		<%= @post.body %>
+		
+	</h4>
+
+
+	<p>Submitted <%= time_ago_in_words(@post.created_at) %> Ago</p>
 	
-</h1>
-
-<p class="date">
-	Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-</p>
-
-<p class="body">
-	 <%= @post.body %>
-</p>
