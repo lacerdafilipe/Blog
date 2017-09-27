@@ -19,6 +19,7 @@
 
 html, body {
 	font-family: 'Raleway', sans-serif;
+	text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -253,6 +254,7 @@ a {
 	}
 	textarea {
 		min-height: 180px;
+		width: 93%;
 	}
 	input[type="submit"] {
 		outline: none;
