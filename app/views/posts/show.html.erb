@@ -1,15 +1,13 @@
-<h1>show Posts</h1>
-
-
-	<h3>
-		<%= @post.title %>		
-	</h3>
-
-	<h4>
-		<%= @post.body %>
-		
-	</h4>
-
-
-	<p>Submitted <%= time_ago_in_words(@post.created_at) %> Ago</p>
+<div id="post_content">
 	
+
+	<h1 class="tittle"><%= @post.title %></h1>
+
+	<p class="body"><%= @post.body %></p>
+
+
+	<p class="date">Submitted <%= time_ago_in_words(@post.created_at) %> Ago</p>
+		
+	<p><%= link_to "Back to home", root_path %> /
+		<%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?"}%></p>
+</div>	

@@ -8,6 +8,8 @@ end
 #materialize sass ruby gem
 gem 'materialize-sass'
 
+gem 'normalize-rails'
+
 gem 'material_icons'
 
 gem 'jquery-turbolinks'
